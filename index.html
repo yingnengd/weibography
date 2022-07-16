@@ -7,6 +7,9 @@ layout: default
 
     <!-- Header -->
     <header id="header">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta property="wb:webmaster" content="c64c5371ba4b8769" />
+        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=514251102" type="text/javascript" charset="utf-8"></script>
         <h1><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
         <nav>
             <ul>
@@ -16,7 +19,23 @@ layout: default
     </header>
 
     <!-- Main -->
-    <div id="main">
+        <div id="wb_connect_btn"></div>
+        <script type="text/javascript">
+          WB2.anyWhere(function(W){
+              W.widget.connectButton({
+                  id: "wb_connect_btn",	
+                  type:"3,2",
+                  callback : {
+                      login:function(o){	//登录后的回调函数
+                        //alert("login: "+o.screen_name);
+                      },	
+                      logout:function(){	//退出后的回调函数
+                        //alert("logout");
+                      }
+                  }
+              });
+          });
+        </script>
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
         <article class="thumb">
