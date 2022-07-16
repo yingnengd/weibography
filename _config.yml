@@ -5,14 +5,14 @@ image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-46465113-2"
 
 # UI configs
-title: "Photography by Ram Patra"
+title: "weibography by Ram Patra"
 subtitle: "See the world through my eyes!"
 author: "xiaoyigezhe"
 header:
  title: "Weibography"
- subtitle: "by Ram"
+ subtitle: "by Xiao"
 footer:
- name: "Hey there, my name is Ram"
+ name: "Hey there, my name is Xiao"
  bio: "I am a developer and a tech aficionado from India. Love making teeny tiny apps solving tiny problems in life and now learning photography."
 web_design: "AJ"
 social_urls:
