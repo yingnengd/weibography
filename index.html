@@ -17,6 +17,12 @@ layout: default
 
     <!-- Main -->
     <div id="main">
+        <li>          
+             <a href="{{ site.social_urls.weibo }}" class="icon fa-weibo" />">
+             <span class="label">Weibo</span>
+            </a>
+        </li>
+        <wb:login-button type="3,2" onlogin="login" onlogout="logout">微博登录按钮</wb:login-button>
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
         <article class="thumb">
