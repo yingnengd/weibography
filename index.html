@@ -16,8 +16,8 @@ layout: default
     </header>
 
     <!-- Main -->
+    <br><wb:login-button type="3,2" onlogin="login" onlogout="logout">微博登录</wb:login-button></br>
     <div id="main">
-        <br><wb:login-button type="3,2" onlogin="login" onlogout="logout">微博登录</wb:login-button></br>
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
         <article class="thumb">
