@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
-    <script src="//tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=514251102" type="text/javascript" charset="utf-8"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY" type="text/javascript" charset="utf-8"></script>
+</head>
     {% include header.html %}
 </head>
 <body>
-    <br><wb:login-button type="3,2" onlogin="login" onlogout="logout">登录按钮</wb:login-button><br>
+    <wb:login-button type="3,2" onlogin="login" onlogout="logout">登录按钮</wb:login-button>
     {{ content }}
-    
     {% include footer.html %}
 </body>
 </html>
